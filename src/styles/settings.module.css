@@ -1,0 +1,110 @@
+/* .container {} */
+
+.image {
+    width: 15px;
+    height: 15px;
+    vertical-align: text-top;
+    margin-left: 2px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.menuContainer {
+    position: absolute;
+    z-index: 100;
+    vertical-align: middle;
+    min-width: 100px;
+    width: 20%;
+    left: 40%;
+    height: 22%;
+    bottom: 35%;
+    color: var(--color-bg-i);
+    font-size: large;
+    background-color: var(--color-ii);
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid var(--color-up-b);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: var(--color-ii);
+}
+
+.list {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1pt solid var(--color-bg) !important;
+    text-align: left;
+    text-align: center;
+    color: var(--color-i);
+}
+
+.list:hover {
+    border: 1pt solid var(--color-s);
+    border-bottom: 1pt solid var(--color-s) !important;
+    color: var(--color-s-2);
+}
+
+
+
+/* SMALLEST WIDTH SCREEN */
+@media screen and (max-width: 300px) {
+    .menuContainer {
+        left: 32%;
+        width: 25%;
+        font-size: medium;
+    }
+}
+
+/* PHONE SCREEN */
+@media screen and (max-width: 450px) and (min-width: 301px){
+    .menuContainer {
+        width: 30%;
+        left: 33%;
+        font-size: large;
+
+    }
+}
+
+/* TABLET AND DESKTOP SCREENS */
+@media screen and (min-width: 701px) {
+    .menuContainer {
+        font-size: x-large;
+        width: 25%;
+        left: 37%;
+
+    }
+}
+
+
+
+@media screen and (max-height: 600px){
+    .menuContainer {
+        height: 28%;
+        bottom: 40%;
+    }
+  }
+  
+  @media screen and (max-height: 1000px) and (min-height: 601px){
+    .menuContainer {
+        height: 20%;
+        bottom: 38%;
+    }
+  }
+  
+  @media screen and (min-height: 1001px){
+    .menuContainer {
+        height: 22%;
+        bottom: 33%;
+    }
+  }

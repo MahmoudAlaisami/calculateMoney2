@@ -1,0 +1,81 @@
+.container {
+  /*background-color: #ebf6f5;*/
+  /*background-color: hsl(175, 38%, 94%);*/
+  background-color: var(--color-bg);
+  background-image: var(--image-bck);
+  /* border-radius: 10px; */
+  /* max-width: 400px; */
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.promptScreen {
+  z-index: 1;
+  position: fixed;
+  left: 20%;
+  top: 35%;
+  width: 60%;
+  height: 20%;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  text-align: center;
+}
+
+.modalText {
+  color: var(--color-i);
+}
+
+.modalInput{
+  background-color: var(--color-bg);
+  color: var(--color-i);
+  text-align: center;
+}
+
+.cancelButton {
+  background-color: var(--color-bg);
+  color: var(--color-i);
+}
+
+@media screen and (max-width: 701px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 700px) {
+  .promptScreen {
+    max-width: 300px;
+    left: calc((100vw - 300 * 1px) / 2);
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px){
+  .container {
+    width: 450px;
+  }
+  .promptScreen {
+    width: 350px;
+    left: calc((100vw - 350 * 1px) / 2);
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .container {
+    width: 500px;
+  }
+  .promptScreen {
+    width: 400px;
+    left: calc((100vw - 400 * 1px) / 2);
+  }
+}

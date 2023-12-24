@@ -1,0 +1,65 @@
+html {
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#__next {
+    height: 100%;
+}
+
+.ant-modal {
+    height: 0%;
+}
+
+.ant-modal .ant-modal-content {
+    background-color: var(--color-bg);
+    width: 60%;
+    left: 20%;
+}
+
+/* .ant-modal-content {
+} */
+
+.ant-modal-close-x {
+    color: var(--color-bg-i);
+}
+
+
+:root {
+    --color-bg: #fff;
+    --color-bg-i: #454545;
+    --color-bg-ii: #b1c7d6;
+    --color-bg-s: #359cac;
+    --color-scrn: #e3f2fc;
+    --color-scrn-br: #454545;
+    --color-sw-s: #454545;
+    --color-i: #000000;
+    --color-ii: #e3f2fc;
+    --color-s: #52C9DC;
+    --color-s-2: #359cac;
+    --color-iii: #c42734;
+    --color-iv: #e3f2fc;
+    --color-up-b: #454545;
+} 
+
+.dark-theme {
+    --color-bg: #1A1B28;
+    --color-bg-i: #fff;
+    --color-bg-ii: #333d5a;
+    --color-bg-s: #359cac;
+    --color-scrn: #fff;
+    --color-scrn-br: #E63946;
+    --color-sw-s: #1E2435;
+    --color-i: #ffffff;
+    --color-ii: #1E2435;
+    --color-s: #52C9DC;
+    --color-s-2: #52C9DC;
+    --color-iii: #E63946;
+    --color-iv: #333d5a;
+    --color-up-b: #52C9DC;
+}

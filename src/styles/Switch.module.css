@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  margin-top: 0.9px;
+}
+.itemContainer {
+  border: 0.5px solid var(--color-sw-s);
+  color: var(--color-sw-s);
+  background-color: var(--color-scrn);
+  width: 40px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.itemContainerSelected {
+  background-color: var(--color-sw-s);
+  border: 0.5px solid var(--color-sw-s);
+  color: var(--color-scrn);
+}
+
+.itemContainer:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.itemContainer:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.itemInnerContainer {
+}
+
+.itemContainer:hover {
+  transform: scale(1.01);
+}
